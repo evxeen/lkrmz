@@ -1,5 +1,5 @@
 import logo from '../../assets/images/logo.png';
-import searchIcon from '../../assets/images/searchIcon.svg';
+// import arrow from '../../assets/icons/arrow.svg';
 import styles from './Header.module.scss';
 
 function Header() {
@@ -8,10 +8,102 @@ function Header() {
       <div>
         <img className={styles.logo} src={logo} alt="logotype" />
       </div>
-      <div className={styles.inputContainer}>
-        <img className={styles.searchIcon} src={searchIcon} alt="search" />
-        <input className={styles.searchInput} type="text" placeholder="Поиск..." />
-      </div>
+      <nav className={styles.menu}>
+        <nav>
+          <ul>
+            <li>
+              Отгрузка продуции
+              <svg
+                className={styles.arrow}
+                width="25px"
+                height="25px"
+                fill="none"
+                viewBox="0 0 25 25"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="#000000"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              Претензионная работа
+              <svg
+                className={styles.arrow}
+                width="25px"
+                height="25px"
+                fill="none"
+                viewBox="0 0 25 25"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="#000000"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              Заказ в производсвто
+              <svg
+                className={styles.arrow}
+                width="25px"
+                height="25px"
+                fill="none"
+                viewBox="0 0 25 25"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="#000000"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              Изделеия по чертежам
+              <svg
+                className={styles.arrow}
+                width="25px"
+                height="25px"
+                fill="none"
+                viewBox="0 0 25 25"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="#000000"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              Инструменты
+              <svg
+                className={styles.arrow}
+                width="25px"
+                height="25px"
+                fill="none"
+                viewBox="0 0 25 25"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 10L12 15L17 10"
+                  stroke="#000000"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </li>
+          </ul>
+        </nav>
+      </nav>
     </div>
   );
 }
