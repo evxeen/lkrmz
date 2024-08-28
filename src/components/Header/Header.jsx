@@ -10,7 +10,11 @@ function Header() {
       </div>
       <div className={styles.inputContainer}>
         <img className={styles.searchIcon} src={searchIcon} alt="search" />
-        <input className={styles.searchInput} type="text" placeholder="Поиск..." />
+        <input
+          className={styles.searchInput}
+          type="text"
+          placeholder="Поиск..."
+        />
       </div>
     </div>
   );
