@@ -26,12 +26,12 @@
     background-color: rgba(200, 196, 196, 0.5);
     width: 200px;
     height: 200px;
-    border-radius: 30px;
+    border-radius: 50px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавная смена фона и тени */
   }
 
   .icon {
-    fill: black; /* Цвет по умолчанию */
+    fill: #340e70; /* Цвет по умолчанию */
     transition: fill 0.3s ease; /* Плавная смена цвета иконки */
   }
 
@@ -39,3 +39,4 @@
     margin-top: 20px;
   }
 }
+
