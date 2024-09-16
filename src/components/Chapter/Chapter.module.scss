@@ -1,0 +1,41 @@
+.chapter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1); /* Увеличение всего блока */
+
+    .chapterContent {
+      background-color: #340e70; /* Изменение цвета фона при наведении */
+      box-shadow: 0 5px 15px rgba(115, 115, 115, 0.5); /* Тень при наведении */
+    }
+
+    .icon {
+      fill: #ffffff; /* Изменение цвета SVG при наведении */
+    }
+  }
+
+  .chapterContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(200, 196, 196, 0.5);
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавная смена фона и тени */
+  }
+
+  .icon {
+    fill: black; /* Цвет по умолчанию */
+    transition: fill 0.3s ease; /* Плавная смена цвета иконки */
+  }
+
+  p {
+    margin-top: 20px;
+  }
+}
