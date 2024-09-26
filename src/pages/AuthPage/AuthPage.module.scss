@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/bgAuth.jpg");
+  background-color: transparent;
+
+  .authBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 16px;
+    width: 30%;
+
+    > * {
+      margin: 20px 0 20px 0;
+    }
+
+
+    input {
+      width: 80%;
+      height: 50px;
+      padding-left: 15px;
+      border-radius: 16px;
+      border: 2px solid rgba(200, 196, 196, 0.5);
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .passwordContainer {
+      margin-top: 1px;
+      position: relative;
+      width: 80%;
+    }
+
+    .passwordContainer input {
+      width: 100%;
+      padding-right: 50px;
+    }
+
+    .eyeButton {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-40%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .eyeIcon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .bottomBlock {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      button {
+        background-color: #340e70;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        width: 30%;
+        border: none;
+        border-radius: 16px;
+        height: 50px;
+        box-shadow: 0 5px 15px rgba(115, 115, 115, 0.5);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+        &:hover {
+          transform: scale(0.9);
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
