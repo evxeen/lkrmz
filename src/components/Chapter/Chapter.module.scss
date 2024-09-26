@@ -6,16 +6,18 @@
   transition: transform 0.3s ease;
   cursor: pointer;
 
+
   &:hover {
-    transform: scale(1.1); /* Увеличение всего блока */
+    transform: scale(0.8);
+    box-shadow: none;
+
 
     .chapterContent {
-      background-color: #340e70; /* Изменение цвета фона при наведении */
-      box-shadow: 0 5px 15px rgba(115, 115, 115, 0.5); /* Тень при наведении */
+      background-color: #340e70;
     }
 
     .icon {
-      fill: #ffffff; /* Изменение цвета SVG при наведении */
+      fill: #ffffff;
     }
   }
 
@@ -27,12 +29,13 @@
     width: 200px;
     height: 200px;
     border-radius: 50px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавная смена фона и тени */
+    box-shadow: 0 5px 15px rgba(115, 115, 115, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
 
   .icon {
-    fill: #340e70; /* Цвет по умолчанию */
-    transition: fill 0.3s ease; /* Плавная смена цвета иконки */
+    fill: #340e70;
+    transition: fill 0.3s ease;
   }
 
   p {
